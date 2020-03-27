@@ -1,0 +1,14 @@
+.vscode
+.env
+.notes
+postgresql_data/
+*.log
+*.pot
+*.pyc
+.vscode
+.coverage
+__pycache__/
+db.sqlite3
+sample.py
+node_modules/
+*public/*
