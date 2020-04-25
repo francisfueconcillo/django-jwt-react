@@ -25,6 +25,17 @@ CONS:
 
 ## Local Development Setup
 
+### Frontend
+- Install Frontend modules
+```
+$ npm i
+```
+- Build frontend app (need to build on each change in development)
+```
+$ npm run build
+```
+- NOTE: FE routes must end in "/"
+
 ### Backend
 - Install pipenv globally
 ```
@@ -46,10 +57,7 @@ $ ./djsr/manage.py createsuperuser
 $ ./djsr/manage.py runserver
 ```
 - Login as superuser in [Admin UI](http://localhost:8000/admin) and create regular users.
-
-### Frontend
 - Access frontend app at http://localhost:8000
-- NOTE: FE routes must end in "/"
 
 ## Deployment
 - 
