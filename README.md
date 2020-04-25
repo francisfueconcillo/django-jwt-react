@@ -10,7 +10,6 @@ PROS:
 CONS:
 - No live reload on JS
 
-
 ## Technologies
 - Django 3.0.4
 - ReactJS 16.13.1
@@ -18,19 +17,36 @@ CONS:
 - [Django Rest Framework - SimpleJWT](https://github.com/SimpleJWT/django-rest-framework-simplejwt)
 - Babel
 - Webpack
+- Pip
 
 ## Local Development Setup
 
-<!-- use postgres -->
+### Backend
+- Set pipenv and install dependencies (do this only once)
+```
+$ pipenv --python 3.7
+$ pipenv install django djangorestframework djangorestframework-simplejwt
+```
+- Setup DB and Create super user
+```
+$ ./djsr/manage.py makemigrations
+$ ./djsr/manage.py migrate
+$ ./djsr/manage.py createsuperuser
+```
+- Run server application
+```
+$ ./djsr/manage.py runserver
+```
+- Create normal user from Admin UI http://localhost:8000/admin. Login as super user
 
-<!-- react routes must end in / -->
+### Frontend
+- FE routes must end in "/"
 
 ## Deployment
 
 
-
 ## References
 - https://hackernoon.com/110percent-complete-jwt-authentication-with-django-and-react-2020-iejq34ta
-- (modified some codes especially on usage of Axios)
+- Modified some codes especially on usage of Axios
 
 
